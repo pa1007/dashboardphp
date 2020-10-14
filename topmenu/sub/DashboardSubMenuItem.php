@@ -1,7 +1,7 @@
 <?php
 
 
-namespace web\dashboard\menu\sub;
+namespace web\dashboard\topmenu\sub;
 
 
 use web\dashboard\utils\HTMLDrawable;
@@ -24,7 +24,7 @@ class DashboardSubMenuItem implements HTMLDrawable {
 
     final public function generateHTML(): string {
         return <<<END
-<a class="dropdown-item" href="$this->href">$this->name</a>
+<li><a class="dropdown-item" href="$this->href">$this->name</a></li>
 END;
 
     }

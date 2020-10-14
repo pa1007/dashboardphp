@@ -1,6 +1,6 @@
 <?php
 
-namespace web\dashboard\menu;
+namespace web\dashboard\topmenu;
 
 
 use web\dashboard\DashboardTitle;
@@ -13,10 +13,13 @@ class DashboardMenu implements HTMLDrawable {
 
     /**
      * DashboardMenu constructor.
-     * @param DashboardTitle $title
+     * @param DashboardTitle|null $title
      * @param array $items
      */
-    public function __construct(DashboardTitle $title, ...$items) {
+    public function __construct(?DashboardTitle $title, ...$items) {
+        if (is_null($title)) {
+            $title = new DashboardTitle("");
+        }
         $this->title = $title;
         $this->items = $items;
     }

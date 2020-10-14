@@ -1,9 +1,9 @@
 <?php
 
 
-namespace web\dashboard\menu;
+namespace web\dashboard\topmenu;
 
-use web\dashboard\menu\sub\DashboardSubMenuItem;
+use web\dashboard\topmenu\sub\DashboardSubMenuItem;
 
 class DashboardMenuSubMenu extends DashboardMenuItem {
 
@@ -33,12 +33,14 @@ class DashboardMenuSubMenu extends DashboardMenuItem {
         }
         return <<<END
 <li class="nav-item dropdown">
- <a class="nav-link dropdown-toggle" href="$this->href" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ <a class="nav-link dropdown-toggle" href="$this->href" id="navbarDropdown" role="button" data-toggle="dropdown" 
+    aria-expanded="false">
    $this->name
  </a>
- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <ul class="dropdown-menu" aria-labelledby="navbarDropdown" role="menu">
  $res
-</div>
+</ul>
+</li>
 END;
 
     }

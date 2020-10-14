@@ -1,7 +1,7 @@
 <?php
 
 
-namespace web\dashboard\menu;
+namespace web\dashboard\topmenu;
 
 
 use web\dashboard\utils\HTMLDrawable;

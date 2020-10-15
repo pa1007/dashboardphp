@@ -13,9 +13,8 @@ class DashboardSideMenu implements HTMLDrawable {
     /**
      * DashboardSideMenu constructor.
      * @param SideMenuHeader $header
-     * @param mixed ...$items
      */
-    public function __construct(SideMenuHeader $header, ) { $this->header = $header; }
+    public function __construct(SideMenuHeader $header) { $this->header = $header; }
 
 
     final public function generateHTML(): string {
@@ -24,7 +23,11 @@ class DashboardSideMenu implements HTMLDrawable {
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
 $h
-
+      <nav class="mt-2">
+       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+       
+       </ul>
+      </nav>
   </aside>
 END;
 

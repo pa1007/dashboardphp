@@ -13,13 +13,16 @@ class SubMenuText implements HTMLDrawable {
     /**
      * SubMenuText constructor.
      * @param string $name
+     * @param bool $activated
      */
-    public function __construct(string $name) { $this->name = $name; }
+    public function __construct(string $name) {
+        $this->name = $name;
+    }
 
 
     public function generateHTML(): string {
         return <<<END
-<li class="nav-header">$this->name</li>
+        <li class="nav-header">$this->name</li>
 END;
 
     }

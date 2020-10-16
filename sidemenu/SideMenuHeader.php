@@ -25,7 +25,7 @@ class SideMenuHeader implements HTMLDrawable {
     }
 
 
-    public function generateHTML(): string {
+    final  public function generateHTML(): string {
         $img = "";
         if ($this->image !== "None") {
             $img = <<<END

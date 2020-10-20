@@ -3,13 +3,13 @@
 
 namespace web\dashboard\topmenu;
 
-use web\dashboard\topmenu\sub\DashboardSubMenuItem;
+use web\dashboard\topmenu\sub\TopSubMenuItem;
 
-class DashboardMenuSubMenu extends DashboardMenuItem {
+class TopMenuSubMenu extends TopMenuItem {
 
 
     /**
-     * @var array|DashboardSubMenuItem[]
+     * @var array|TopSubMenuItem[]
      */
     private array $elements;
 
@@ -17,7 +17,7 @@ class DashboardMenuSubMenu extends DashboardMenuItem {
      * DashboardMenuSubMenu constructor.
      * @param string $href
      * @param string $name
-     * @param array|DashboardSubMenuItem[] $elements
+     * @param array|TopSubMenuItem[] $elements
      */
     public function __construct(string $href, string $name, ...$elements) {
         parent::__construct($href, $name);

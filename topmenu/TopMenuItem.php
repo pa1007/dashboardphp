@@ -1,15 +1,14 @@
 <?php
 
 
-namespace web\dashboard\topmenu\sub;
+namespace web\dashboard\topmenu;
 
 
 use web\dashboard\utils\HTMLDrawable;
 
-class DashboardSubMenuItem implements HTMLDrawable {
-
-    private string $href;
-    private string $name;
+class TopMenuItem implements HTMLDrawable {
+    protected string $href;
+    protected string $name;
 
     /**
      * DashboardMenuItem constructor.
@@ -22,9 +21,11 @@ class DashboardSubMenuItem implements HTMLDrawable {
     }
 
 
-    final public function generateHTML(): string {
+    public function generateHTML(): string {
         return <<<END
-<li><a class="dropdown-item" href="$this->href">$this->name</a></li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="$this->href " class="nav-link">$this->name</a>
+      </li>
 END;
 
     }

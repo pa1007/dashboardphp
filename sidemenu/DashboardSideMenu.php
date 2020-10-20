@@ -30,6 +30,7 @@ class DashboardSideMenu implements HTMLDrawable {
         $h = $this->header->generateHTML();
         $us = $this->userConnection->generateHTML();
         $it = "";
+        var_dump($this->items);
         foreach ($this->items as $item) {
             $it .= $item->generateHTML();
         }

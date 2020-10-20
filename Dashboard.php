@@ -3,23 +3,23 @@
 namespace web\dashboard;
 
 use web\dashboard\sidemenu\DashboardSideMenu;
-use web\dashboard\topmenu\DashboardMenu;
+use web\dashboard\topmenu\DashboardTopMenu;
 use web\dashboard\utils\HTMLDrawable;
 
 class Dashboard implements HTMLDrawable {
 
     public const NB = 0;
 
-    private DashboardMenu $menu;
+    private DashboardTopMenu $menu;
 
     private DashboardSideMenu $sideMenu;
 
     /**
      * Dashboard constructor.
-     * @param DashboardMenu $menu
+     * @param DashboardTopMenu $menu
      * @param DashboardSideMenu $sideMenu
      */
-    public function __construct(DashboardMenu $menu, DashboardSideMenu $sideMenu) {
+    public function __construct(DashboardTopMenu $menu, DashboardSideMenu $sideMenu) {
         $this->menu = $menu;
         $this->sideMenu = $sideMenu;
     }

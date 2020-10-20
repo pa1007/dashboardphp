@@ -2,8 +2,7 @@
 
 namespace web\dashboard\topmenu;
 
-
-use web\dashboard\DashboardTitle;
+use web\dashboard\utils\DashboardTitle;
 use web\dashboard\utils\HTMLDrawable;
 
 class DashboardTopMenu implements HTMLDrawable {

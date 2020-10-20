@@ -1,9 +1,6 @@
 <?php
 
-namespace web\dashboard;
-
-use web\dashboard\utils\CssClass;
-use web\dashboard\utils\HTMLDrawable;
+namespace web\dashboard\utils;
 
 class DashboardTitle implements HTMLDrawable {
 

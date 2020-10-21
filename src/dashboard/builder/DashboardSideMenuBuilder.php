@@ -36,11 +36,11 @@ class DashboardSideMenuBuilder implements Builder {
     }
 
     function addItem(...$items): DashboardSideMenuBuilder {
-        array_push($this->items, $items);
+        array_push($this->items, ...$items);
         return $this;
     }
 
-    function addMenu(string $name, string $icon, ...$items): DashboardSideMenuBuilder {
+    function addMenu(string $name, string $icon, array $items): DashboardSideMenuBuilder {
         array_push($this->items, new SideSubMenu($name, $icon, false, $items));
         return $this;
     }

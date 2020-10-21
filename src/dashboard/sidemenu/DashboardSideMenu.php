@@ -6,6 +6,7 @@ namespace web\dashboard\sidemenu;
 
 use web\dashboard\sidemenu\sub\SideMenuConnection;
 use web\dashboard\utils\HTMLDrawable;
+use web\dashboard\utils\Infos;
 
 class DashboardSideMenu implements HTMLDrawable {
 
@@ -29,11 +30,7 @@ class DashboardSideMenu implements HTMLDrawable {
     final public function generateHTML(): string {
         $h = $this->header->generateHTML();
         $us = $this->userConnection->generateHTML();
-        $it = "";
-        var_dump($this->items);
-        foreach ($this->items as $item) {
-            $it .= $item->generateHTML();
-        }
+        $it = Infos::getInfo($this->items);
         return <<<END
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">

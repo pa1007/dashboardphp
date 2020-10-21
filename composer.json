@@ -1,0 +1,24 @@
+{
+  "name": "pa1007/dashboard",
+  "description": "Create an easy Dashboard in php based on AdminLTE",
+  "keywords": ["Dashboard","Dash","board","API","ADMINLTE","Admin","Generate"],
+  "homepage": "https://pa1007.dev",
+  "license": "apache2",
+  "authors": [
+    {
+      "name": "Paul-Alexandre Fourrière",
+      "email": "pa.fourriere@pa1007.dev",
+      "homepage": "https://pa1007.dev",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-0": {
+      "web": "src/"
+    }
+  }
+}

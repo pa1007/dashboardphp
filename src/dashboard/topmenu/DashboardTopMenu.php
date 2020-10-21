@@ -4,6 +4,7 @@ namespace web\dashboard\topmenu;
 
 use web\dashboard\utils\DashboardTitle;
 use web\dashboard\utils\HTMLDrawable;
+use web\dashboard\utils\Infos;
 
 class DashboardTopMenu implements HTMLDrawable {
 
@@ -25,13 +26,9 @@ class DashboardTopMenu implements HTMLDrawable {
 
     final public function generateHTML(): string {
         $t = $this->title->generateHTML();
-        $menuT = "";
-
-        foreach ($this->items as $item) {
-            $menuT .= $item->generateHTML();
-        }
+        $menuT = Infos::getInfo($this->items);
         return <<<END
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-primary navbar-dark">
  $t
  <ul class="navbar-nav">
   <li class="nav-item">
@@ -39,10 +36,6 @@ class DashboardTopMenu implements HTMLDrawable {
   </li>
   $menuT
  </ul>
-
-
-
-
 
 </nav>
 END;

@@ -5,6 +5,7 @@ namespace web\dashboard\sidemenu\sub;
 
 
 use web\dashboard\utils\HTMLDrawable;
+use web\dashboard\utils\Infos;
 
 class SideSubMenu implements HTMLDrawable {
 
@@ -34,10 +35,7 @@ class SideSubMenu implements HTMLDrawable {
 
 
     final public function generateHTML(): string {
-        $h = "";
-        foreach ($this->items as $item) {
-            $h .= $item->generateHTML();
-        }
+        $h = Infos::getInfo($this->items);
         $a = $this->activated ? "active" : "";
         return <<<END
 <li class="nav-item has-treeview">

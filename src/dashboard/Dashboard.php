@@ -51,6 +51,6 @@ END. $this->generateHTML() . "</html>";
         $htmlM = $this->menu->generateHTML();
         $htmlSM = $this->sideMenu->generateHTML();
 
-        return "<div class='skin-purple'>" . $htmlM . $htmlSM . "</div>";
+        return "<div>" . $htmlM . $htmlSM . "</div>";
     }
 }

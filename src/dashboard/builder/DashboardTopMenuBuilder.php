@@ -24,7 +24,7 @@ class DashboardTopMenuBuilder implements Builder {
     }
 
     function build(): ?DashboardTopMenu {
-        return new DashboardTopMenu($this->title);
+        return new DashboardTopMenu($this->title, $this->items);
     }
 
     function isBuildable(): bool {
@@ -43,7 +43,7 @@ class DashboardTopMenuBuilder implements Builder {
     }
 
     function addItems(...$items): DashboardTopMenuBuilder {
-        array_push($this->items, $items);
+        array_push($this->items, ...$items);
         return $this;
     }
 

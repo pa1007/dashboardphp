@@ -3,7 +3,7 @@
   "description": "Create an easy Dashboard in php based on AdminLTE",
   "keywords": ["Dashboard","Dash","board","API","ADMINLTE","Admin","Generate"],
   "homepage": "https://pa1007.dev",
-  "license": "apache2",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "Paul-Alexandre Fourrière",

@@ -35,9 +35,9 @@ class Dashboard implements HTMLDrawable {
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
  
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.pa1007.dev/adminlte/css/adminlte.min.css">
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <script src="https://cdn.pa1007.dev/adminlte/js/adminlte.min.js"></script>
     
    <!-- Custom fonts for this template -->
    <link href=\"https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900\" rel=\"stylesheet\">

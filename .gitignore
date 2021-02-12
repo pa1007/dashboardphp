@@ -1,0 +1,11 @@
+node_modules
+composer.lock
+package-lock.json
+package.json
+serverPush.php
+vendor/
+.idea/
+LICENSE
+src/conf/conf.ini
+README.md
+.travis.yml
